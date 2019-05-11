@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inicio</title>
+
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/Inicio1.css">
+
+	<script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+	
+	<script src="js/jquery.min.js"></script>
+	
+	<script src="js/slider.js"></script>
+
+</head>
+<body>
+<!--LOGO-->
+<img src="Imagenes/head.png" alt="">
+
+<!--BARRA DE NAVEGACION-->
+	<nav>
+		<div class="menu">
+			<ul>
+				<li style="width: 100px;""><a href="#" class="menu-item" ><span class="" style="width: 100px;"><i class="fas fa-bars"></i></span>Categorias</a>
+					<ul>
+						<li><a href="#">Electrohogar</a></li>
+						<li><a href="#">Tecnología</a></li>
+						<li><a href="#">Cuidado Personal</a></li>
+						<li><a href="#">Hogar y Bazar</a></li>
+						<li><a href="#">Deportes y Outdoors</a></li>
+						<li><a href="#">Niños y Bebés</a></li>
+						<li><a href="#">Abarrotes</a></li>
+						<li><a href="#">Bebidas</a></li>
+						<li><a href="#">Frutas y Verduras</a></li>
+						<li><a href="#">Carnes y Aves</a></li>
+						<li><a href="#">Pescados y Mariscos</a></li>
+						<li><a href="#">Lácteos y Huevos</a></li>
+						<li><a href="#">Congelados</a></li>
+						<li><a href="#">Embutidos</a></li>
+						<li><a href="#">Cervezas y Licores</a></li>
+						<li><a href="#">Comidas y Pastelería</a></li>
+						<li><a href="#">Limpieza</a></li>
+						<li><a href="#">Mascotas</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="menu-item"><span class=""><i class="fas fa-blender"></i></span>Electrohogar</a></li>
+				<li><a href="#" class="menu-item"><span class=""><i class="fas fa-mobile-alt"></i></span>Tecnología</a></li>
+				<li><a href="#" class="menu-item"><span class=""><i class="fas fa-apple-alt"></i></span>Frutas y Verduras</a></li>
+				<li><a href="#" class="menu-item"><span class=""><i class="fas fa-egg"></i></span>Lacteos y Huevos</a></li>
+				<li><a href="#" class="menu-item"><span class=""><i class="fas fa-utensils"></i></span>Abarrotes</a></li>
+				<li><a href="#" class="menu-item"><span class=""><i class="fas fa-wine-bottle"></i></span>Bebidas</a></li>
+				<li><a href="#" class="menu-item"><span class=""><i class="fas fa-cocktail"></i></span>Cervezas y Licores</a></li>
+				<li><a href="#" class="menu-item"><span class=""><i class="fas fa-shower"></i></span>Cuidado Personal</a></li>
+				<li><a href="#" class="menu-item"><span class=""><i class="fas fa-broom"></i></span>Limpieza</a></li>
+				<li><a href="#" class="menu-item"><span class=""><i class="fas fa-bed"></i></span>Dormitorio</a></li>
+				<li><a href="#" class="menu-item"><span class=""><i class="fas fa-tv"></i></span>Televisores</a></li>
+				<li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
+				<li><a href="#"><i class="fa fa-shopping-basket"></i></a></li>
+			</ul>
+			<div class="search-form">
+				<form>
+				<input type="text" placeholder="Buscar producto">
+				</form>
+			</div>
+		</div>
+	</nav>
+
+<!--SLIDER-->
+	<div class="slideshow">
+		<ul class="slider">
+			<li>
+				<img src="Imagenes/imagen1.PNG" alt="">
+			</li>
+			<li>
+				<img src="Imagenes/imagen2.PNG" alt="">
+			</li>
+			<li>
+				<img src="Imagenes/imagen3.PNG" alt="">
+			</li>
+			<li>
+				<img src="Imagenes/imagen4.PNG" alt="">
+			</li>
+		</ul>
+
+		<ol class="pagination" style="width: 1320px;">
+			
+		</ol>
+
+	</div>
+
+
+
+	<!--SCRIPT DE BARRA DE NAVEGACION-->
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script type=text/javascript>
+		$(document).ready(function(){
+			$('#search').click(function(){
+				$('.menu-item').toggleClass('hide-item')
+				$('.search-form').toggleClass('active')
+			})
+		})
+	</script>
+
+
+</body>
+</html>
